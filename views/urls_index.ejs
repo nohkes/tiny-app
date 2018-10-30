@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>TinyApp</title>
+</head>
+<body>
+		<ul>
+			<% for (allUrls in urls) { %>
+			<li><%= `The Shortened form of ${longURL[allUrls]} is: ${allUrls}`%></li>
+			<% }; %>
+
+
+		</ul>
+
+</body>
+
+</html>
