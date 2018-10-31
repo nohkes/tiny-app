@@ -11,13 +11,14 @@
 		<ul>
 			
 			
-			<% for (var allUrls in urls) { %>
+			<% for (allUrls in urls) { %>
 
-<li><%= `The Shortened form of ${urls[allUrls]} is: ${allUrls}`%></li>
+<li><%= `${allUrls} -------> ${urls[allUrls]} `%></li>
+<a href= <%= `/urls/${allUrls}` %>>edit</a>
 
 <form method="POST" action="/urls/<%= allUrls %>/delete">
 		
-		<button type=button"button">Delete</button>
+<button type=button"button">Delete</button>
 			
 			</form>
 			

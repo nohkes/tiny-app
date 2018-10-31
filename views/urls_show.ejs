@@ -9,8 +9,15 @@
 	<% include partials/_header %>
 		<ul>
 		
-			<li><%= `The Shortened form of ${longURL[shortURL]} is ${shortURL}`%></li>
+	<li><%= `The Shortened form of ${longURL[shortURL]} is ${shortURL}`%>
+		
 
+</li> <form method="POST" action="/urls/<%= shortURL%>" >
+		
+ChangeUrl : <input name="<%= shortURL%>" value="<%= longURL[shortURL] %>">
+    		<input type="submit" value="Update!">
+	
+	</form>
 
 
 		</ul>
