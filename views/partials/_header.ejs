@@ -5,10 +5,19 @@
 </head>
 
 <body>
- 
-    <h3>
-  Welcome 
+	 <h3>
+   <% if(!username){ %>
+   <h1>Welcome Stranger <form method="POST" action="/login" ><input name="username"><input type="submit" value="login"></form>
+</h1>
+ <% } else{ %>  
+ 	
+   <h1> Hello <%= username %> 
+   <form method="POST" action="/logout" ><input type="submit" value="logout"> </h1>
+<% } %>
     </h3>
+ 	
+    
+
 <div>
 
 
