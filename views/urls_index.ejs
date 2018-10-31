@@ -6,10 +6,24 @@
   <title>TinyApp</title>
 </head>
 <body>
+	<% include partials/_header %>
+
 		<ul>
-			<% for (allUrls in urls) { %>
-			<li><%= `The Shortened form of ${urls[allUrls]} is: ${allUrls}`%></li>
-			<% }; %>
+			
+			
+			<% for (var allUrls in urls) { %>
+
+<li><%= `The Shortened form of ${urls[allUrls]} is: ${allUrls}`%></li>
+
+<form method="POST" action="/urls/<%= allUrls %>/delete">
+		
+		<button type=button"button">Delete</button>
+			
+			</form>
+			
+			<% }; %> 
+
+
 
 
 		</ul>
