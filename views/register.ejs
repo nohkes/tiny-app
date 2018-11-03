@@ -1,28 +1,19 @@
-<title>Registration Page</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TinyApp</title>
 </head>
-
 <body>
-	 <h3>
-
-   <h1>Enter Email
-  <form method="POST" action="/register"><input name="email" type="email">
-</h1>
-
- 	
-   <h1> Enter Password
-   <input name="password" type="password"> </h1>
-   <input type="submit" value="submit">
-    </h3>
+    <% include ./partials/_header.ejs %>
+    <h3 align="center">Register... FOR FREE</h3>
+    <form method="POST" action="/register">
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email" style="width: 300px">
+      <br>
+      <label for="password">Password</label>
+      <input id="password" type="password" name="password" style="width: 300px">
+      <br>
+      <button type="submit">Register</button>
     </form>
- 	
-    
-
-<div>
-
-
-
-</div>    
-
-<p>Go back to <a href="/urls">home page</a></p> 
 </body>
 </html>
